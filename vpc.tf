@@ -1,6 +1,7 @@
-module "vpc" {
-    source  = "network/google"
-    version = "3.2.2"
+module "network" {   
+  source  = "app.terraform.io/romanenkoas-training/network/google"
+  version = "3.2.2"
+  
 
     project_id   = var.project
     network_name = "gaurav-network"
